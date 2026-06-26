@@ -1,5 +1,5 @@
-name: inno_mobile
-description: INNO Mobile - MVVM + Riverpod + GetIt
+name: tvf_mobile
+description: TVF Mobile - MVVM + Riverpod + GetIt
 publish_to: 'none'
 version: 1.0.0+1
 

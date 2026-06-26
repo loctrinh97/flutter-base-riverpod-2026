@@ -1,9 +1,9 @@
-# INNO Mobile — Project Context for Claude
+# TVF Mobile — Project Context for Claude
 
 > Quick-reference file. Read this first, then open `.claude/` docs for deeper detail.
 
 ## What this project is
-Flutter mobile base template for the INNO workspace.
+Flutter mobile base template for the TVF workspace.
 Architecture: **MVVM + Riverpod** (state) + **GetIt** (DI) + **Flutter Navigator** (navigation).
 Modeled after `/Users/ameetkumar2/StudioProjects/INNO/base-flutter` but modernized.
 

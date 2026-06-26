@@ -13,7 +13,7 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) => ProviderScope(
         child: MaterialApp(
-          title: 'INNO Mobile',
+          title: 'TVF Mobile',
           theme: AppTheme.light,
           darkTheme: AppTheme.dark,
           themeMode: ThemeMode.system,
