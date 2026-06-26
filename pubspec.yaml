@@ -37,6 +37,13 @@ dependencies:
   # UI
   flutter_svg: ^2.0.9
 
+  # Environment config
+  flutter_dotenv: ^6.0.1
+
+  # UI utilities
+  shimmer_animation: ^2.2.1
+  flutter_easyloading: ^3.0.5
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -54,3 +61,7 @@ flutter:
     - assets/images/
     - assets/icons/
     - assets/fonts/
+    - .env.dev
+    - .env.qa
+    - .env.stg
+    - .env.prd

@@ -25,6 +25,30 @@ android {
         versionName = flutter.versionName
     }
 
+    flavorDimensions += "env"
+    productFlavors {
+        create("dev") {
+            dimension = "env"
+            applicationId = "com.example.mobile_base.dev"
+            resValue("string", "app_name", "INNO Dev")
+        }
+        create("qa") {
+            dimension = "env"
+            applicationId = "com.example.mobile_base.qa"
+            resValue("string", "app_name", "INNO QA")
+        }
+        create("stg") {
+            dimension = "env"
+            applicationId = "com.example.mobile_base.stg"
+            resValue("string", "app_name", "INNO Staging")
+        }
+        create("prd") {
+            dimension = "env"
+            applicationId = "com.example.mobile_base"
+            resValue("string", "app_name", "INNO")
+        }
+    }
+
     buildTypes {
         release {
             // TODO: Add your own signing config for the release build.

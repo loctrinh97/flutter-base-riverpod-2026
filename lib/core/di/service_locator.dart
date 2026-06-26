@@ -5,7 +5,7 @@ import '../network/api_interceptor.dart';
 import '../navigation/navigation_service.dart';
 import '../services/secure_storage_service.dart';
 import '../services/storage_service.dart';
-import '../../shared/constants/app_constants.dart';
+import '../config/app_config.dart';
 import '../../features/auth/repository/auth_repository.dart';
 
 /// Global service locator instance.
@@ -39,7 +39,7 @@ Future<void> setupLocator() async {
 
   locator.registerLazySingleton<ApiClient>(
     () => ApiClient(
-      baseUrl: AppConstants.baseUrl,
+      baseUrl: AppConfig.instance.baseUrl,
       authInterceptor: locator<AuthInterceptor>(),
       loggingInterceptor: locator<LoggingInterceptor>(),
     ),

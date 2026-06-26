@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'core/di/service_locator.dart';
 import 'core/navigation/app_router.dart';
@@ -20,6 +21,7 @@ class App extends StatelessWidget {
           navigatorKey: navigatorKey,
           initialRoute: AppRoutes.splash,
           onGenerateRoute: AppRouter.onGenerateRoute,
+          builder: EasyLoading.init(),
         ),
       );
 }

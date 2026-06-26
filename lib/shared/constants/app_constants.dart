@@ -1,6 +1,7 @@
+import '../../core/config/app_config.dart';
+
 abstract final class AppConstants {
-  // Replace with your actual base URL or load from env
-  static const baseUrl = 'https://api.example.com';
+  static String get baseUrl => AppConfig.instance.baseUrl;
 
   // Storage keys
   static const keyOnboardingSeen = 'onboarding_seen';
